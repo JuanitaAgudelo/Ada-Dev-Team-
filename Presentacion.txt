@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+﻿<<<<<<< HEAD
 Hola. Archivo modificado por German Osorio
 =======
 ﻿Presentación del equipo
@@ -13,5 +13,7 @@ en el aprendizaje constante y autónomo, ......
 
 
 Hola soy daniel
-Hola soy Mauricio
+
+Hola Soy Mauricio Grisales Salazar, vivo en la Ciudad de Tuluá-Valle del Cauca, estudiante de MisionTic2022 en la UdeA, estoy con toda la disposición de adquirir y compartir conocimientos del mundo de la tecnología, procurando tener una buena actitud para lograr un excelente resultado en este equipo de desarrollo.
+
 >>>>>>> 7899560903d95c75c96c80e4adebc00988cc141d
