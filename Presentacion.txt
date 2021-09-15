@@ -1,4 +1,4 @@
-Presentación del equipo
+﻿Presentación del equipo
 
 Bienvenido al repositorio del equipo Ada Dev Team
 
@@ -10,3 +10,4 @@ en el aprendizaje constante y autónomo, ......
 
 
 Hola soy daniel
+Hola soy Mauricio
