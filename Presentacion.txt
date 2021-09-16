@@ -16,4 +16,5 @@ Hola soy Daniel Felipe Trujillo Guzmán, vivo en la ciudad de Cali, estudiante d
 
 Hola Soy Mauricio Grisales Salazar, vivo en la Ciudad de Tuluá-Valle del Cauca, estudiante de MisionTic2022 en la UdeA, estoy con toda la disposición de adquirir y compartir conocimientos del mundo de la tecnología, procurando tener una buena actitud para lograr un excelente resultado en este equipo de desarrollo.
 
+Hola! Mi nobre es Juanita, vivo en la cuidad de Pereira, Risaralda, estudiante de Astronomía en la UdeA y cursando el programa MisionTic 2022. Me empecé a interesar por la programación cuando inicié mi pregrado y ahora que tengo la oportunidad de estudiar desarrollo de software estoy poniendo todo mi empeño y dedicación en eso. Espero que nuestro equipo saque el proyecto adelante y sea uno de los mejores! 
 >>>>>>> 7899560903d95c75c96c80e4adebc00988cc141d
