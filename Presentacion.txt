@@ -19,4 +19,6 @@ Hola Soy Mauricio Grisales Salazar, vivo en la Ciudad de Tuluá-Valle del Cauca,
 Hola! Mi nobre es Juanita, vivo en la cuidad de Pereira, Risaralda, estudiante de Astronomía en la UdeA y cursando el programa MisionTic 2022. Me empecé a interesar por la programación cuando inicié mi pregrado y ahora que tengo la oportunidad de estudiar desarrollo de software estoy poniendo todo mi empeño y dedicación en eso. Espero que nuestro equipo saque el proyecto adelante y sea uno de los mejores! 
 
 Hola! Mi nombre es Germán Osorio, vivo en Cartago. Soy tecnólogo en Sistemas, espero aprovechar al máximo MisionTic para aprender muchísimo. Feliz de contar con un excelente equipo de trabajo.
+
+Hola Mi nombre es Sebastián Mora, vivo en la ciudad de Bogotá. Me enteré del programa de Misión TIC en sus ultimos días de convocatoria por casualidad, escuchando la radio. Decidí entrar sin saber que me iba a encontrar y bueno, agradezco haber prendido la radio ese día.
 >>>>>>> 7899560903d95c75c96c80e4adebc00988cc141d
