@@ -1,6 +1,4 @@
-﻿<<<<<<< HEAD
 
-=======
 ﻿Presentación del equipo
 
 Bienvenido al repositorio del equipo Ada Dev Team
@@ -9,7 +7,7 @@ Este es un repositorio creado para administrar los proyectos creados por el equi
   
 En honor a la primer programadora de la historia, Ada Lovelace, le dimos nombre a nuestro equipo formado por 
 5 programadores entusiastas del mundo del desarrollo y apasionados por la programación. Somos 5 estudiantes enfocados 
-en el aprendizaje constante y autónomo, ......  
+en el aprendizaje constante y autónomo, con habilidades para el trabajo en equipo y el apoyo mutuo. Y nos presentamos a continuación... 
 
 
 Hola soy Daniel Felipe Trujillo Guzmán, vivo en la ciudad de Cali, estudiante de ingeniería de sistemas y de MisionTic 2022, mi objetivo es adquirir los conocimientos iniciar mi vida laboral, me apasiona el desarrollo de sofware y tengo la diposición y actitud para salir adelante, junto a mis compañeros de equipo, con el proyecto.
@@ -21,4 +19,7 @@ Hola! Mi nobre es Juanita, vivo en la cuidad de Pereira, Risaralda, estudiante d
 Hola! Mi nombre es Germán Osorio, vivo en Cartago. Soy tecnólogo en Sistemas, espero aprovechar al máximo MisionTic para aprender muchísimo. Feliz de contar con un excelente equipo de trabajo.
 
 Hola Mi nombre es Sebastián Mora, vivo en la ciudad de Bogotá. Me enteré del programa de Misión TIC en sus ultimos días de convocatoria por casualidad, escuchando la radio. Decidí entrar sin saber que me iba a encontrar y bueno, agradezco haber prendido la radio ese día.
->>>>>>> 7899560903d95c75c96c80e4adebc00988cc141d
+
+
+Equipo Ada Dev Team, Desarrollo de Software, Colombia, MisiónTic 2022.
+
