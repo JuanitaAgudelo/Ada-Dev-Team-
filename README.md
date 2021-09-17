@@ -30,6 +30,6 @@ En honor a la primer programadora de la historia, Ada Lovelace, le dimos nombre 
 <br>
 <br>
 <p style='text-align: right;'> Equipo Ada Dev Team, Desarrollo de Software, Colombia, MisiónTic 2022. </p>
-<p><img height="170px" src="https://github.com/JuanitaAgudelo/My_repositorio/blob/main/WhatsApp%20Image%202021-09-15%20at%204.52.12%20PM.jpeg" align="right" hspace="10px" vspace="0px"></p>
+<p><img height="170px" src="https://github.com/JuanitaAgudelo/My_repositorio/blob/main/WhatsApp%20Image%202021-09-15%20at%204.52.12%20PM.jpeg" align="left" hspace="10px" vspace="0px"></p>
 
 
