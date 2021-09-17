@@ -13,6 +13,8 @@ En honor a la primer programadora de la historia, Ada Lovelace, le dimos nombre 
 <br>
 <center> <i>👋 Hola soy Daniel Felipe Trujillo Guzmán, vivo en la ciudad de Cali, estudiante de ingeniería de sistemas y de MisionTic 2022, mi objetivo es adquirir los conocimientos iniciar mi vida laboral, me apasiona el desarrollo de sofware y tengo la diposición y actitud para salir adelante, junto a mis compañeros de equipo, con el proyecto.
 <br>
+<br>
+<br>
   👋 Hola Soy Mauricio Grisales Salazar, vivo en la Ciudad de Tuluá-Valle del Cauca, estudiante de MisionTic2022 en la UdeA, estoy con toda la disposición de adquirir y compartir conocimientos del mundo de la tecnología, procurando tener una buena actitud para lograr un excelente resultado en este equipo de desarrollo.
 <br> 
   👋 Hola! Mi nobre es Juanita, vivo en la cuidad de Pereira, Risaralda, estudiante de Astronomía en la UdeA y cursando el programa MisionTic 2022. Me empecé a interesar por la programación cuando inicié mi pregrado y ahora que tengo la oportunidad de estudiar desarrollo de software estoy poniendo todo mi empeño y dedicación en eso. Espero que nuestro equipo saque el proyecto adelante y sea uno de los mejores! 
