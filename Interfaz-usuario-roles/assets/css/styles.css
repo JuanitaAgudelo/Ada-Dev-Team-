@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+body
+{
+    background-color: #C5CAE9;
+    font-family: 'Roboto', sans-serif;
+}
+.bg-primarycolor
+{
+    background-color: #3f51b5 !important;
+}
+.nav-link
+{
+    color: white;
+}
+.nav-link:hover{
+    color: white;
+}
+.nav-item{
+    margin-right: 80px;
+}
+.active{
+    background-color: #303f9f !important;
+    color:white !important;
+}
+
+.user
+{
+    margin: 100px;
+    color: #ffff;
+}
+.user:hover{
+    color: #ffff;
+}
+
+.d-flex
+{
+    margin-right: 20%;
+    margin-left: 20%;
+}
+.modal-header{
+    background-color: #303f9f;
+    color: #ffff;
+}
+.modal-body{
+    background-color: #C5CAE9;
+}
+.modal-footer{
+    background-color: #C5CAE9;
+}
+.close{
+    background-color: #303f9f;
+    border:0;
+}
+.img-small{
+    max-height: 30px;
+    max-width: 30px;
+}
+.img-small-table{
+    max-height: 20px;
+    max-width: 20px;
+}
+.btn-table
+{
+    width: 50px;
+}
+#navbarDropdown{
+    margin-right: 30px;
+}
+#Buscar{
+    width: 90px;
+    height: 40px;
+}
+
+#usuario{
+    margin:1%;
+}
+#btnNuevo
+{
+    width: 200px;
+    margin-left: 30%;
+    margin-bottom: 10px;
+}
+#Agregar
+{
+    margin-left: 10px;
+}
+#Logo
+{
+    max-width:200px;
+    height: auto;
+}
