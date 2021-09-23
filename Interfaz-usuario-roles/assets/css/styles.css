@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 body
 {
-    background-color: #C5CAE9;
+    background-color: #ffff;
     font-family: 'Roboto', sans-serif;
 }
 .bg-primarycolor
@@ -42,11 +42,12 @@ body
     color: #ffff;
 }
 .modal-body{
-    background-color: #C5CAE9;
+    background-color: #ffff;
 }
 .modal-footer{
-    background-color: #C5CAE9;
+    background-color: #ffff;
 }
+
 .close{
     background-color: #303f9f;
     border:0;
@@ -79,6 +80,7 @@ body
     width: 200px;
     margin-left: 30%;
     margin-bottom: 10px;
+    font-size: 25px;
 }
 #Agregar
 {
