@@ -13,24 +13,30 @@
 
 <body>
   <header>
-    <nav class="navbar bg-primarycolor">
-      <img id="Logo" src="./assets/img/índice.jpg" alt="">
-      <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Ventas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Estado de ventas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Vendedores</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Usuarios</a>
-        </li>
-      </ul>
-      <div class="dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+    <nav class="navbar navbar-expand-xl bg-primarycolor">
+      <div class="container-fluid">
+        <img id="Logo" class="d-inline-block align-top" src="./assets/img/índice.jpg" alt="Logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="./assets/img/bars-solid.svg" class="img-small" alt="Usuario">
+        </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav nav-navs">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ventas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Estado de ventas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Vendedores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Usuarios</a>
+          </li>
+        </ul>
+      </div>
+      <div id="dropdown-div" class="dropdown">
+        <a id="dropdown-user" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
           aria-expanded="false">
           <img src="./assets/img/user-regular.svg" class="img-small" alt="Usuario">
           Admin
@@ -43,8 +49,7 @@
           <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
         </ul>
       </div>
-
-
+      </div>
     </nav>
   </header>
   <div class="container-fluid">
