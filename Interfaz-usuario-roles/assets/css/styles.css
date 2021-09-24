@@ -75,6 +75,38 @@ body
 {
     width: 50px;
 }
+.navbar-toggler{
+    border-color: #303f9f;
+}
+.title, footer
+{
+    background-color: #F2F2F2;    
+    color: #827373; 
+    text-align: center;
+    padding: 10px;
+}
+footer
+{
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+} 
+
+footer .imagenEquipo
+{
+    max-width:150px;
+    height: auto; 
+    box-shadow:10px 7px 10px gray; 
+}
+
+footer .imagenMintic2022
+{  
+    max-width:150px;
+    height: auto;
+    box-shadow:10px 7px 10px gray; 
+}
 #navbarDropdown{
     margin-right: 30px;
 }
@@ -105,4 +137,5 @@ body
 {
     max-width:200px;
     height: auto;
+    box-shadow:10px 7px 10px #1e2863; 
 }
