@@ -25,10 +25,7 @@
             <a class="nav-link" href="#">Ventas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Estado de ventas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Vendedores</a>
+            <a class="nav-link" href="#">Productos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Usuarios</a>
@@ -56,11 +53,7 @@
     <div class="mt-5"></div>
 
     <div class="row">
-      <div class="col-12 col-md-6">
-        <button type="button" id="btnNuevo" class="btn btn-lg btn-success" data-bs-toggle="modal"
-          data-bs-target="#modalCRUD">Agregar<img src="./assets/img/plus-solid.svg" class="img-small" id="Agregar" alt="Agregar"></button>
-      </div>
-      <div class="col-12 col-md-6">
+      <div class="col">
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Buscar usuario" aria-label="Search">
           <button id="Buscar" class="btn btn-success" type="submit"><img src="./assets/img/search-solid.svg" class="img-small" alt="Busqueda"></button>
@@ -77,10 +70,9 @@
             <thead>
               <tr>
                 <th scope="col">ID</th>
-                <th scope="col">Nombre</th>
+                <th scope="col">Correo</th>
                 <th scope="col">Rol</th>
-                <th scope="col">Celular</th>
-                <th scope="col">Fecha ingreso</th>
+                <th scope="col">Estado</th>
                 <th scope="col">Acciones</th>
               </tr>
             </thead>
@@ -89,70 +81,17 @@
                 <th scope="row">1</th>
                 <td>correo@gmail.com</td>
                 <td>Administrador</td>
-                <td>555555</td>
-                <td>21/09/2021</td>
+                <td>No autorizado</td>
                 <td>
-                  <div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-primary btn-table" data-bs-toggle="modal"
+                  <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-warning btn-table" data-bs-toggle="modal"
                       data-bs-target="#modalCRUD2"><img src="./assets/img/edit-regular.svg" class="img-small-table" alt="Busqueda"></button>
-                    <button id="Borrar" type="button" class="btn btn-danger btn-table"
-                      onclick="confirm('¿Está seguro de borrar el registro?')"><img src="./assets/img/trash-alt-regular.svg" class="img-small-table" alt="Busqueda"></button>
                   </div>
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
-      </div>
-    </div>
-  </div>
-  <!--Modal para añadir-->
-  <div class="modal fade" id="modalCRUD" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title fs-2" id="exampleModalLabel">Nuevo usuario</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-              aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <form id="formPersonas">
-          <div class="modal-body">
-            <div class="form-group">
-              <label for="ID" class="col-form-label">ID:</label>
-              <input type="text" class="form-control border-dark" id="ID" placeholder="Identificación">
-            </div>
-            <div class="form-group">
-              <label for="Nombre" class="col-form-label">Nombre:</label>
-              <input type="text" class="form-control border-dark" id="Nombre" placeholder="Nombre de la cuenta">
-            </div>
-            <div class="form-group">
-              <label for="Rol" class="col-form-label">Rol:</label>
-              <select class="form-select border-dark" id="Rol">
-                <option selected>Selecciona un rol...</option>
-                <option value="1">Vendedor</option>
-                <option value="2">Administrador</option>
-                <option value="3">Ejecutivo</option>
-                <option value="4">Operario</option>
-                <option value="5">Director</option>
-                <option value="6">Gerente comercial</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="Celular" class="col-form-label">Celular:</label>
-              <input type="text" class="form-control border-dark" id="Celular" placeholder="Número de celular">
-            </div>
-            <div class="form-group">
-              <label for="Fecha" class="col-form-label">Fecha ingreso:</label>
-              <input type="date" class="form-control border-dark" id="Fecha">
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-            <button type="submit" id="btnGuardar" class="btn btn-success">Guardar</button>
-          </div>
-        </form>
       </div>
     </div>
   </div>
@@ -174,35 +113,30 @@
               <input type="text" class="form-control border-dark" id="ID" placeholder="Identificación" value="1">
             </div>
             <div class="form-group">
-              <label for="Nombre" class="col-form-label">Nombre:</label>
-              <input type="text" class="form-control border-dark" id="Nombre" placeholder="Nombre de la cuenta"
+              <label for="Correo" class="col-form-label">Correo:</label>
+              <input type="text" class="form-control border-dark" id="Correo" placeholder="Correo"
                 value="correo@gmail.com">
             </div>
             <div class="form-group">
-              <label for="Rol2" class="col-form-label">Rol:</label>
-              <select class="form-select border-dark" id="Rol2">
+              <label for="Rol" class="col-form-label">Rol:</label>
+              <select class="form-select border-dark" id="Rol">
                 <option selected>Selecciona un rol...</option>
                 <option value="1">Vendedor</option>
                 <option value="2">Administrador</option>
-                <option value="3">Ejecutivo</option>
-                <option value="4">Operario</option>
-                <option value="5">Director</option>
-                <option value="6">Gerente comercial</option>
               </select>
             </div>
             <div class="form-group">
-              <label for="Celular" class="col-form-label">Celular:</label>
-              <input type="text" class="form-control border-dark" id="Celular" placeholder="Número de celular"
-                value="555555">
+              <label for="Estado" class="col-form-label">Estado:</label>
+              <select class="form-select border-dark" id="Estado">
+                <option selected>Selecciona un Estado...</option>
+                <option value="1">Pendiente</option>
+                <option value="2">Autorizado</option>
+                <option value="3">No autorizado</option>
+              </select>
             </div>
-            <div class="form-group">
-              <label for="Fecha" class="col-form-label">Fecha ingreso:</label>
-              <input type="date" class="form-control border-dark" id="Fecha" value="21/09/2021">
-            </div>
-          </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-            <button type="submit" id="btnEditar" class="btn btn-primary"> Editar </button>
+            <button type="submit" id="btnEditar" class="btn btn-primary">Actualizar</button>
           </div>
         </form>
       </div>
