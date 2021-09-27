@@ -107,9 +107,6 @@ footer .imagenMintic2022
     height: auto;
     box-shadow:10px 7px 10px gray; 
 }
-#navbarDropdown{
-    margin-right: 30px;
-}
 #Buscar{
     width: 90px;
     height: 40px;
@@ -132,6 +129,8 @@ footer .imagenMintic2022
 #dropdown-user
 {
     width: 120px;
+    margin-right: 28px;
+    
 }
 #Logo
 {
