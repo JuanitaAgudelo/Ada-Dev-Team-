@@ -145,6 +145,15 @@ button{
     box-shadow: 1px 3px #cbcfcb; 
 }
 
+.btn-add{
+    background-color: #03A9F4;    
+    color: #827373; 
+    text-align: center;
+}
+
+i{
+    font-size: 20px;
+}
 footer
 {
     font-size: 12px;
