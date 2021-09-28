@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <style>
 
         body{
@@ -47,28 +50,8 @@
                             Inicia Sesión
                         </div> -->
                     <!-- </div> -->
-                    </button>  
-                <!--
-                    Formulario de login
-                -->
-                <!-- <form action="">
-                    <div class="mb-4">
-                        <label for="email" class="form-label">Correo electrónico</label>
-                        <input type="email" class="form-control" name="email">
-                    </div>
-                    <div class="mb-4">
-                        <label for="password" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" name="password">
-                    </div>
-                    <div class="mb-4">
-                        <span><a href="#">Olvidaste tu contraseña?</a></span>
-                    </div>  
-                    <div class="mt-5 d-grid">
-                        <button type="submit" class="btn btn-primary">Iniciar sesión</button>
-                    </div>
-                </form> -->
-                
-                    <button type="button" class="btn btn-light btn-outline-dark border-primary mt-5">Regístrate</button>
+                    </button>                  
+                    <button type="button" class="btn btn-light btn-outline-dark border-primary mt-5" data-bs-toggle="modal" data-bs-target="#modalCRUD2">Regístrate</button>
                 </div>
                 <div class="pt-5 mt-5">
 
@@ -76,7 +59,40 @@
             </div>
         </div>
     </div>
-    
+ 
+    <div class="modal fade" id="modalCRUD2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fs-2" id="exampleModalLabel">Registrar usuario</h5>
+        </div>
+        <form id="formEditar">
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="ID" class="col-form-label">Nombre:</label>
+              <input type="text" class="form-control border-dark" id="ID" placeholder="Nombre" value="">
+            </div>
+            <div class="form-group">
+              <label for="Correo" class="col-form-label">Correo:</label>
+              <input type="text" class="form-control border-dark" id="Correo" placeholder="Correo"
+                value="">
+            </div>
+            
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="submit" id="btnEditar" class="btn btn-primary botonenviar">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+  integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+  integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+  crossorigin="anonymous"></script>   
     <script src="bootstrap.bundle.min.js"></script>
 </body>
 </html>
