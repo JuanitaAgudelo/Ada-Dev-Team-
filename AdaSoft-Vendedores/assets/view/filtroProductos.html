@@ -24,9 +24,9 @@
             <ul class="nav nav-navs">
               <li class="nav-item">
                 <a class="nav-link" href="#">Ventas</a>
-              </li>              
+              </li>             
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Productos</a>
+                <a class="nav-link active" aria-current="page" href="./productos.html">Productos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Usuarios</a>
@@ -52,46 +52,112 @@
       </header>
         <!-- content -->
         <div class="title">
-            <h1>Productos</h1>
+            <h1>Filtro Productos</h1>
         </div> 
         <div class="container">
             <div class="row">
                 <div class="column-4">                  
                 </div>
                 <div class="column-4"> 
-                    <div class="formVendedores">
-                        <div class="input-group mb-3 formulario">            
-                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Id Producto" disabled>
-                        </div> 
-                        <div class="input-group mb-3 formulario">            
+                        <div class="formVendedores">                   
+                        <div class=" column-4 input-group mb-3 formulario">            
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Id Producto">
                             <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Nombre">
-                        </div>                        
-                        <div class="input-group mb-3">            
-                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Descripción">
-                        </div>
-                        <div class="input-group mb-3">            
-                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Valor Unitario">
-                        </div>                        
-                        <div class="input-group mb-3 formulario">            
                             <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Estado">
-                        </div>                         
-                        <div class="d-grid gap-2 d-md-block">
-                            <button class="btn btn-success" type="button" data-bs-toggle="modal"  data-bs-target="#confirmProduct">Registrar</button>
-                            <button class="btn btn-info" type="button"><a href="./filtroProductos.html">Consultar</a></button>
-                        </div>
-                    </div>                    
+                            <div class="d-grid gap-2 d-md-block">                        
+                                <button class="btn btn-info" type="button">Filtrar</a></button>
+                            </div>
+                        </div>                       
+                    </div>                                                              
                 </div>
                 <div class="column-4">                    
                 </div>
             </div>
-        </div>       
+        </div>
+
+        <!-- Table Productos -->
+        <div class="container">
+            <div class="row-12">
+                <div class="column-4">                    
+                </div>
+                <div class="column-4"> 
+                    <table class="table table-striped">       
+                    <thead>
+                        <tr>
+                        <th scope="col">idProducto</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Descripcion</th>
+                        <th scope="col">Valor Unitario</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">Accion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>               
+                        <td>1</td>
+                        <td>Producto A</td>
+                        <td>Producto para ... cuyos ingredientes ...</td>
+                        <td>1500</td>
+                        <td>Disponible</td>
+                        <td>
+                            <button class="btn btn-warning" data-bs-toggle="modal"  data-bs-target="#editProduct">
+                                <i class="far fa-edit"></i>
+                            </button>
+                        </td>                
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Producto B</td>
+                            <td>Producto para ... cuyos ingredientes ...</td>
+                            <td>2500</td>
+                            <td>Disponible</td>
+                        <td>
+                            <button class="btn btn-warning" data-bs-toggle="modal"  data-bs-target="#editProduct">
+                                <i class="far fa-edit"></i>
+                            </button>
+                        </td>                   
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Producto C</td>
+                            <td>Producto para ... cuyos ingredientes ...</td>
+                            <td>5500</td>
+                            <td>No Disponible</td>
+
+                            <td>
+                                <button class="btn btn-warning" data-bs-toggle="modal"  data-bs-target="#editProduct">
+                                    <i class="far fa-edit"></i>
+                                </button>
+                            </td> 
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Producto D</td>
+                            <td>Producto para ... cuyos ingredientes ...</td>
+                            <td>800</td>
+                            <td>Disponible</td>
+                            <td>
+                                <button class="btn btn-warning" data-bs-toggle="modal"  data-bs-target="#editProduct">
+                                    <i class="far fa-edit"></i>
+                                </button>
+                            </td> 
+                        </tr>
+                    </tbody>          
+                </table>
+                </div>
+                <div class="column-4">                    
+                </div>
+            </div>
+        </div> 
+        
     </div>
-    <!-- Modal -->
-    <div class="modal" id='confirmProduct' tabindex="-1">
+
+     <!-- Modal -->
+     <div class="modal" id='editProduct' tabindex="-1">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">Confirmar Registro Producto</h5>
+              <h5 class="modal-title">Editar Producto</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -105,12 +171,14 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-              <button type="button" class="btn btn-primary">Registrar</button>
+              <button type="button" class="btn btn-primary">Editar</button>
             </div>
           </div>
         </div>
       </div>
-      <!-- Footer -->
+
+
+    <!-- Footer -->
         <footer>
             <div class="container">
                 <div class="row">
