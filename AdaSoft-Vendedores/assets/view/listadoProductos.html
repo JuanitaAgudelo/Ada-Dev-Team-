@@ -52,7 +52,7 @@
       </header>
         <!-- content -->
         <div class="title">
-            <h1>Filtro Productos</h1>
+            <h1>Listado Productos</h1>
         </div> 
         <div class="container">
             <div class="row">
@@ -63,6 +63,7 @@
                         <div class=" column-4 input-group mb-3 formulario">            
                             <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Id Producto">
                             <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Nombre">
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Descripcion">
                             <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Estado">
                             <div class="d-grid gap-2 d-md-block">                        
                                 <button class="btn btn-info" type="button">Filtrar</a></button>
@@ -171,12 +172,33 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-              <button type="button" class="btn btn-primary">Editar</button>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal"  data-bs-target="#confirmEditProduct">Editar</button>
             </div>
           </div>
         </div>
       </div>
 
+       <!-- Modal 2 -->
+
+       <div class="modal" id="confirmEditProduct" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Producto Editado</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Se ha Editado el producto con id: ..., <br>
+                 con nombre: ..., <br>
+                 con la siguiente descripción: ..., <br>
+                 y estado: ...</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>              
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- Footer -->
         <footer>

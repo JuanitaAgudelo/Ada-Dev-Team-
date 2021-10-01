@@ -77,7 +77,7 @@
                         </div>                         
                         <div class="d-grid gap-2 d-md-block">
                             <button class="btn btn-success" type="button" data-bs-toggle="modal"  data-bs-target="#confirmProduct">Registrar</button>
-                            <button class="btn btn-info" type="button"><a href="./filtroProductos.html">Consultar</a></button>
+                            <button class="btn btn-info" type="button"><a href="./listadoProductos.html">Consultar</a></button>
                         </div>
                     </div>                    
                 </div>
@@ -105,11 +105,34 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-              <button type="button" class="btn btn-primary">Registrar</button>
+              <button type="button" class="btn btn-primary"  data-bs-toggle="modal"  data-bs-target="#registerProduct">Registrar</button>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Modal 2 -->
+
+      <div class="modal" id="registerProduct" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Producto Registrado</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Se ha registrado el producto con id: ..., <br>
+                 con nombre: ..., <br>
+                 con la siguiente descripción: ..., <br>
+                 y estado: ...</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>              
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Footer -->
         <footer>
             <div class="container">
