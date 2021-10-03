@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-xl bg-primarycolor">
+      <div class="container-fluid">
+        <img id="Logo" class="d-inline-block align-top" src="./assets/img/índice.jpg" alt="Logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="./assets/img/bars-solid.svg" class="img-small" alt="Usuario">
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="nav nav-navs">
+            <li class="nav-item">
+              <a class="nav-link Menu" aria-current="" href="#">Ventas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link Menu" aria-current="" href="#">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link Menu" aria-current="" href="#">Usuarios</a>
+            </li>
+          </ul>
+        </div>
+        <div id="dropdown-div" class="dropdown">
+          <a id="dropdown-user" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <img src="./assets/img/user-regular.svg" class="img-small" alt="Usuario">
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">User</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container-fluid">
+    <div class="mt-5"></div>
+
+    <div class="row">
+      <div class="col">
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Buscar usuario" aria-label="Search">
+          <button id="Buscar" class="btn btn-success" type="submit"><img src="./assets/img/search-solid.svg"
+              class="img-small" alt="Busqueda"></button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="mt-5"></div>
+      <div class="col-lg-12">
+        <div class="table-responsive">
+          <table id="TableUser" class="table table-hover table-striped table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Correo</th>
+                <th scope="col">Rol</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>correo@gmail.com</td>
+                <td>Pendiente</td>
+                <td>Pendiente</td>
+                <td>
+                  <div class="btn-group d-flex justify-content-center" role="group">
+                    <button type="button" class="btn btn-warning btn-table" data-bs-toggle="modal"
+                      data-bs-target="#modalCRUD2"><img src="./assets/img/edit-regular.svg" class="img-small-table"
+                        alt="Busqueda"></button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>correo2@gmail.com</td>
+                <td>Vendedor</td>
+                <td>Autorizado</td>
+                <td>
+                  <div class="btn-group d-flex justify-content-center" role="group">
+                    <button type="button" class="btn btn-warning btn-table" data-bs-toggle="modal"
+                      data-bs-target="#modalCRUD2"><img src="./assets/img/edit-regular.svg" class="img-small-table"
+                        alt="Busqueda"></button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>correo3@gmail.com</td>
+                <td>Vendedor</td>
+                <td>No Autorizado</td>
+                <td>
+                  <div class="btn-group d-flex justify-content-center" role="group">
+                    <button type="button" class="btn btn-warning btn-table" data-bs-toggle="modal"
+                      data-bs-target="#modalCRUD2"><img src="./assets/img/edit-regular.svg" class="img-small-table"
+                        alt="Busqueda"></button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>correo4@gmail.com</td>
+                <td>Administrador</td>
+                <td>Autorizado</td>
+                <td>
+                  <div class="btn-group d-flex justify-content-center" role="group">
+                    <button type="button" class="btn btn-warning btn-table" data-bs-toggle="modal"
+                      data-bs-target="#modalCRUD2"><img src="./assets/img/edit-regular.svg" class="img-small-table"
+                        alt="Busqueda"></button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>correo4@gmail.com</td>
+                <td>Administrador</td>
+                <td>Autorizado</td>
+                <td>
+                  <div class="btn-group d-flex justify-content-center" role="group">
+                    <button type="button" class="btn btn-warning btn-table" data-bs-toggle="modal"
+                      data-bs-target="#modalCRUD2"><img src="./assets/img/edit-regular.svg" class="img-small-table"
+                        alt="Busqueda"></button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>correo@gmail.com</td>
+                <td>Pendiente</td>
+                <td>Pendiente</td>
+                <td>
+                  <div class="btn-group d-flex justify-content-center" role="group">
+                    <button type="button" class="btn btn-warning btn-table" data-bs-toggle="modal"
+                      data-bs-target="#modalCRUD2"><img src="./assets/img/edit-regular.svg" class="img-small-table"
+                        alt="Busqueda"></button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>correo2@gmail.com</td>
+                <td>Vendedor</td>
+                <td>Autorizado</td>
+                <td>
+                  <div class="btn-group d-flex justify-content-center" role="group">
+                    <button type="button" class="btn btn-warning btn-table" data-bs-toggle="modal"
+                      data-bs-target="#modalCRUD2"><img src="./assets/img/edit-regular.svg" class="img-small-table"
+                        alt="Busqueda"></button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>correo3@gmail.com</td>
+                <td>Vendedor</td>
+                <td>No Autorizado</td>
+                <td>
+                  <div class="btn-group d-flex justify-content-center" role="group">
+                    <button type="button" class="btn btn-warning btn-table" data-bs-toggle="modal"
+                      data-bs-target="#modalCRUD2"><img src="./assets/img/edit-regular.svg" class="img-small-table"
+                        alt="Busqueda"></button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td>correo4@gmail.com</td>
+                <td>Administrador</td>
+                <td>Autorizado</td>
+                <td>
+                  <div class="btn-group d-flex justify-content-center" role="group">
+                    <button type="button" class="btn btn-warning btn-table" data-bs-toggle="modal"
+                      data-bs-target="#modalCRUD2"><img src="./assets/img/edit-regular.svg" class="img-small-table"
+                        alt="Busqueda"></button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td>correo4@gmail.com</td>
+                <td>Administrador</td>
+                <td>Autorizado</td>
+                <td>
+                  <div class="btn-group d-flex justify-content-center" role="group">
+                    <button type="button" class="btn btn-warning btn-table" data-bs-toggle="modal"
+                      data-bs-target="#modalCRUD2"><img src="./assets/img/edit-regular.svg" class="img-small-table"
+                        alt="Busqueda"></button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- Lista de páginas -->
+    <div class="row">
+      <div class="col-sm-12 col-md-5">
+        <div class="dataTables_info" role="status" aria-live="polite">
+          Registros 1 a 10 de 20</div>
+      </div>
+      <div class="col-sm-12 col-md-7">
+        <div class="dataTables_paginate paging_simple_numbers d-flex justify-content-end">
+          <ul class="pagination">
+            <li class="paginate_button page-item previous disabled" id="btn-Anterior">
+              <a href="#" aria-controls="TableUser" data-dt-idx="0" tabindex="0" class="page-link">Anterior</a>
+            </li>
+            <li class="paginate_button page-item active">
+              <a href="#" aria-controls="TableUser" data-dt-idx="1" tabindex="0" class="page-link">1</a>
+            </li>
+            <li class="paginate_button page-item ">
+              <a href="#" aria-controls="TableUser" data-dt-idx="2" tabindex="0" class="page-link">2</a>
+            </li>
+            <li class="paginate_button page-item next" id="btn-Siguiente">
+              <a href="#" aria-controls="TableUser" data-dt-idx="3" tabindex="0" class="page-link">Siguiente</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <img class='imagenEquipo' src="./assets/img/índice.jpg" alt="logo Ada Team">
+        </div>
+        <div class="col">
+          <div>Ada-Dev-Team</div>
+          <div>MisionTic 2022 UdeA</div>
+          <div>2021</div>
+        </div>
+        <div class="col">
+          <img class='imagenMintic2022' src="./assets/img/logoMisionTic2022UdeA.png" alt="logoMisionTic2022UdeA">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--Modal para editar-->
+  <div class="modal fade" id="modalCRUD2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fs-2" id="exampleModalLabel">Editar usuario</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form id="formEditar">
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="ID" class="col-form-label">ID:</label>
+              <input type="text" class="form-control border-dark" id="ID" placeholder="Identificación" value="">
+            </div>
+            <div class="form-group">
+              <label for="Correo" class="col-form-label">Correo:</label>
+              <input type="text" class="form-control border-dark" id="Correo" placeholder="Correo" value="">
+            </div>
+            <div class="form-group">
+              <label for="Rol" class="col-form-label">Rol:</label>
+              <select class="form-select border-dark" id="Rol">
+                <option selected>Selecciona un rol...</option>
+                <option value="1">Vendedor</option>
+                <option value="2">Administrador</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="Estado" class="col-form-label">Estado:</label>
+              <select class="form-select border-dark" id="Estado">
+                <option selected>Selecciona un Estado...</option>
+                <option value="1">Autorizado</option>
+                <option value="2">No autorizado</option>
+              </select>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              <button type="submit" id="btnEditar" class="btn btn-primary">Actualizar</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+    integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+  <script type="text/javascript" src="./main.js"></script>
+</body>
+
+</html>
