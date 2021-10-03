@@ -2,3 +2,16 @@
    padding-left: 25px;
    padding-right: 25px;
 }
+
+.fondo-header{
+   background-color: #3F51B5;
+}
+
+.letra-header{
+   color: #f1f1f6;
+}
+
+.label-color{
+   color: black;
+   font-weight: bold;
+}
