@@ -50,7 +50,7 @@ body
 }
 .modal-header{
     background-color: #303f9f;
-    color: #ffff;
+    color: white;
 }
 .modal-body{
     background-color: #ffff;
@@ -58,7 +58,16 @@ body
 .modal-footer{
     background-color: #ffff;
 }
-
+.btn-primary{
+    background-color: rgb(7, 112, 7);
+}
+.borde{border:3px #303f9f solid;}
+.col-form-label{
+    height: 10px;
+}
+.form-control{
+    height: 30px;
+}
 .close{
     background-color: #303f9f;
     border:0;
@@ -113,6 +122,7 @@ footer .imagenMintic2022
 #Buscar{
     width: 90px;
     height: 40px;
+    
 }
 
 #usuario{
@@ -147,6 +157,19 @@ footer .imagenMintic2022
     color:#FF9800;
 
 }
+.btn-outline-warning2{
+    background-color: Transparent;
+    border-color:rgb(223, 55, 55);
+    color:rgb(228, 44, 44);
+
+}
+
+.btn-table2{
+    background-color: rgb(223, 55, 55);
+    border-color:rgb(228, 44, 44);
+    color:white;
+
+}
 h2{
     margin-right: 7px;
     font-size: 30px;
@@ -165,7 +188,7 @@ h2{
 
 .wrapper{
     position: absolute;
-    left: 80%;
+    left: 78%;
     /*transform: translate(-50%,50%);*/
     width: 250px;
     height: 45px;
@@ -211,4 +234,19 @@ h2{
 }
 .wrapper .next{
     right: 15px;
+}
+p{
+    text-align: left;
+}
+.d-flex{
+    margin-right: 0px;
+}
+.btn-secondary{
+    background-color: #FF9800 ;
+}
+.icon-check{
+    color: green;
+    margin-left: 20px;
+    font-size: 25px;
+
 }
